@@ -1,41 +1,89 @@
 .insomnia {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 15%;
-    height: 60vh;
+    padding-top: 60px;
+    padding-bottom: 45px;
+
+    @media  screen and (min-width: 768px) {
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 37px;
+        padding-bottom: 60px;  
+    }
+
+    @media  screen and (min-width: 1280px) {
+        padding-left: 275px;
+        padding-right: 275px;
+        padding-top: 65px;
+    }
 
     &_title {
         color: $lightblue-color;
         font-size: 14px;
-        line-height: 2.5rem;
+        padding-bottom: 10px;
+
+        @media  screen and (min-width: 1280px) {
+            font-size: 16px;
+            padding-bottom: 15px;
+        }
     }
 
     &_article {
-        padding-bottom: 15%;
+        padding-bottom: 20px;
+
         &-title {
             font-family: $title-font;
             font-size: 24px;
+            line-height: 2rem;
             font-weight: bold;
-            padding-bottom: 8%;
+            padding-bottom: 15px;
+            
+            @media  screen and (min-width: 768px) {
+                font-size: 26px;
+                padding-bottom: 25px;
+            }
+
+            @media  screen and (min-width: 1280px) {
+                font-size: 32px;
+                padding-bottom: 40px;
+            }
         }
 
         &-text {
             font-size: 18px;
             line-height: 2rem;
+            padding-bottom: 20px;
+
+            @media  screen and (min-width: 768px) {
+                font-size: 20px;
+            }
         }
     }
 
     &_link {
-        color: $orange-color;
-        font-size: 20px;
-        font-weight: 500;
-        border: 3px solid $orange-color;
-        width: 75px;
-        border-radius: 25px;
-        padding: 10px 25px;
-        text-decoration: none;
         
+        border: 3px solid $orange-color;
+        width: 76px;
+        height: 45px;
+        border-radius: 22.5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &-go {
+            text-decoration: none;
+            color: $orange-color;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        @media  screen and (min-width: 768px) {
+            width: 91px;
+        }
+
+        @media  screen and (min-width: 1280px) {
+            width: 160px;
+        }
     }
-
-
 }
