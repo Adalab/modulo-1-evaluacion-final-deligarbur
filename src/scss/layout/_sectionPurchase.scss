@@ -1,0 +1,52 @@
+.purchase {
+    height: 100%;
+    background-color: $iceblue-color;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    // Grid
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 49px;
+
+    &_article {
+        text-align: center;
+        padding-left: 55px;
+        padding-right: 55px;
+
+        &-title {
+            font-family: $title-font;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 2rem;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 2rem;
+        }
+    }
+
+    &_title {
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &_link {
+        color: $white-color;
+        background-color: $orange-color;
+        font-size: 20px;
+        font-weight: 500;
+        width: 184px;
+        padding: 10px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+
+}
