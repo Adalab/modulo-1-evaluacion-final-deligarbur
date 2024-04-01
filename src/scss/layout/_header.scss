@@ -1,4 +1,3 @@
-
 .header {
     width: 100%;
     position: fixed;
@@ -6,7 +5,6 @@
     display: flex;
     flex-direction: row;
     
-
     .titleHamb {
         background-color: $blue-color;
         width: 44px;
@@ -15,14 +13,30 @@
         flex-direction: row;
         justify-content: center;
 
-
-    
         &_logo {
             width: 60%;
             height: 60%;
          
         }
     
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        .titleHamb {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &_logo {
+                width: 40%;
+                height: 40%;
+            }
+        
+        }
     }
 
 }
