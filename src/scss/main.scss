@@ -1,11 +1,16 @@
-/*
-@import 'components/code';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';
-*/
-
 @import 'core/reset';
 @import 'core/variables';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sectionInsomnia';
+@import 'layout/sectionPurchase';
+@import 'layout/sectionProxy';
+
+* {
+    font-family: $text-font, 'Segoe UI', 'Open Sans', sans-serif;
+    
+}
+
+.main {
+    width: 100vw;
+}

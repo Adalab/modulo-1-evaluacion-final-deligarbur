@@ -1,0 +1,42 @@
+.insomnia {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15%;
+    padding-bottom: 4%;
+    height: 70vh;
+
+    &_title {
+        color: $lightblue-color;
+        font-size: 14px;
+        line-height: 2.5rem;
+    }
+
+    &_article {
+        padding-bottom: 15%;
+        &-title {
+            font-family: $title-font;
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 8%;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 2rem;
+        }
+    }
+
+    &_link {
+        color: $orange-color;
+        font-size: 20px;
+        font-weight: 500;
+        border: 3px solid $orange-color;
+        width: 75px;
+        border-radius: 25px;
+        padding: 10px 25px;
+        text-decoration: none;
+        
+    }
+
+
+}
