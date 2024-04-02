@@ -66,6 +66,10 @@
         width: 76px;
         height: 45px;
         border-radius: 22.5px;
+        // Flexbox
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         align-content: center;
         
