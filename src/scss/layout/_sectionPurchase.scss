@@ -1,5 +1,6 @@
 .purchase {
     background-color: $iceblue-color;
+    // Flexbox
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +24,6 @@
             padding-top: 61px;
         }
     }
-
     
     &_article {
         text-align: center;
@@ -74,21 +74,23 @@
         }
     }
 
-    
     &_link {
-        color: $white-color;
         background-color: $orange-color;
-        font-size: 20px;
-        font-weight: 400;
         width: 184px;
         height: 45px;
         padding: 10px 25px;
         border-radius: 22.5px;
-        text-decoration: none;
         text-align: center;
         align-content: center;
         
 
+        &-more {
+            color: $white-color;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
         @media  screen and (min-width: 768px) {
             grid-column: 1 / 4;
             width: 210px;
@@ -96,5 +98,10 @@
         @media  screen and (min-width: 1280px) {
             width: 255px;
         }
+    }
+
+    &_link:hover {
+        transform: perspective(1000px) rotateX(360deg);
+        transition: transform 1s ease 0s;
     }
 }

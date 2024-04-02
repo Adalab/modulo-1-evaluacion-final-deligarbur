@@ -1,13 +1,4 @@
 .footer {
-
-    // Fuente icono corazón
-    //  @font-face {
-    //     font-family: 'Zapf Dingbats';
-    //     src: url('/fonts/Zapf-Dingbats-Regular.ttf');
-    //     font-style: normal;
-    //     font-weight: normal;
-    // }
-
     background-color: $navy-color;
     width: 100vw;
     padding-bottom: 60px;
@@ -33,6 +24,11 @@
         justify-content: center;
         align-items: center;
         transform: translateY(-50%);
+        transition: transform 250ms;
+    }
+
+    &_toplink:hover {
+        transform: translateY(-30px);
     }
 
     .nav {

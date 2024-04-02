@@ -14,10 +14,6 @@
     justify-content: flex-end;
     align-items: center;
 
-    @media screen and (min-width: 1280px){
-        padding-bottom: 15px;
-    }
-
     &_title {
         font-family: $title-font;
         font-size: 42px;
@@ -70,6 +66,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform 250ms;
 
         &_icon {
             width: 45%;
@@ -81,6 +78,10 @@
             height: 45px;
         }
         
+    }
+
+    .titleArrow:hover {
+        transform: translateY(10px);
     }
 
 }

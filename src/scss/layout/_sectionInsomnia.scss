@@ -66,11 +66,9 @@
         width: 76px;
         height: 45px;
         border-radius: 22.5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
+        text-align: center;
+        align-content: center;
+        
         &-go {
             text-decoration: none;
             color: $orange-color;
@@ -86,4 +84,10 @@
             width: 160px;
         }
     }
+
+    &_link:hover {
+        transform: perspective(1000px) rotateX(360deg);
+        transition: transform 1s ease 0s;
+    }
+    
 }
