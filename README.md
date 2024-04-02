@@ -4,7 +4,7 @@
 
 **Dirección GitHub Pages:**
 
-
+http://beta.adalab.es/modulo-1-evaluacion-final-deligarbur/
 
 ## Estructura de carpetas
 
@@ -31,6 +31,8 @@ src
 
 
 ## Enunciado
+
+Diseño plantilla: https://sta.sh/02ag1k1t6801
 
 El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado. Hay que resolver varios puntos:
 
