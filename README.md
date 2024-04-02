@@ -1,4 +1,4 @@
-![Diseño](https://drive.google.com/file/d/1yHibMu4wyt27qswesAYH-1OwFnelCt4P/view?usp=sharing)
+![Diseño](https://sta.sh/02ag1k1t6801)
 
 # Módulo 1: Ejercicio de evaluación final
 
