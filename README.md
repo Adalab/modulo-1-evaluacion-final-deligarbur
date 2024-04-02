@@ -1,5 +1,3 @@
-![Diseño](https://sta.sh/02ag1k1t6801)
-
 # Módulo 1: Ejercicio de evaluación final
 
 **Dirección GitHub Pages:**
