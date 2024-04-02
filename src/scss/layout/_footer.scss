@@ -1,6 +1,7 @@
 .footer {
 
-    // @font-face {
+    // Fuente icono corazón
+    //  @font-face {
     //     font-family: 'Zapf Dingbats';
     //     src: url('/fonts/Zapf-Dingbats-Regular.ttf');
     //     font-style: normal;
@@ -10,17 +11,23 @@
     background-color: $navy-color;
     width: 100vw;
     padding-bottom: 60px;
+    // Flexbox
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
+    @media  screen and (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+    }
    
     &_toplink {
-        
         background-color: $white-color;
         width: 45px;
         height: 45px;
         border-radius: 50%;
+        // Flexbox
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29,14 +36,15 @@
     }
 
     .nav {
+        padding-top: 20px;
+        // Flexbox
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-
+        justify-content: space-between;
+        gap: 30px;
+        
         @media  screen and (min-width: 768px) {
-            padding-left: 40px;
-            padding-right: 40px;
             flex-direction: row;
             justify-content: space-between;
             align-items:flex-start;
@@ -49,25 +57,35 @@
     
         &_links {
             font-family: $text-font;
-            color: $white-color;
             font-size: 16px;
             line-height: 2rem;
             text-align: center;
 
+            &-url {
+                text-decoration: none;
+                color: $white-color;
+            }  
+
             @media  screen and (min-width: 768px) {
                 text-align: left;
+                width: 210px;
             }
         }
     
         &_rrss {
             font-family: $text-font;
-            color: $white-color;
             font-size: 16px;
             line-height: 2rem;
             text-align: center;
 
+            &-url {
+                text-decoration: none;
+                color: $white-color;
+            }
+
             @media  screen and (min-width: 768px) {
                 text-align: left;
+                width: 210px;
             }
         }
         
@@ -81,16 +99,17 @@
             &-love {
                 display: flex;
                 gap: 5px;
-    
-                & span {
-                color: $orange-color;
-                }
             }
     
             @media  screen and (min-width: 768px) {
                 order: -1;
                 text-align: left;
+                width: 210px;
             }
         }
-    } 
+    }
+
+    .fa-heart {
+        color: $orange-color;
+    }
 }

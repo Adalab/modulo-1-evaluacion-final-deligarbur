@@ -1,39 +1,55 @@
 .purchase {
     background-color: $iceblue-color;
-    // Grid
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 120px 120px 120px 80px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    padding-bottom: 30px;
+    justify-content: center;
+    gap: 57px;
+    padding-bottom: 60px;
 
-    @media  screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 120px 120px 120px;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
+    &_title {
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 24px;
+        padding-top: 30px;
+
+        @media  screen and (min-width: 768px) {
+            font-size: 26px;
+            padding-top: 36px;
+        }
+
+        @media  screen and (min-width: 1280px) {
+            font-size: 32px;
+            padding-top: 61px;
+        }
     }
 
-    @media  screen and (min-width: 1280px) {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
+    
     &_article {
         text-align: center;
         padding-left: 70px;
         padding-right: 70px;
-
+        // Grid
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px;
+        gap: 44px;
+        
         @media  screen and (min-width: 768px) {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            // Grid
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            align-items: start;
+            align-content: center;
+            gap: 27px;
         }
 
         @media  screen and (min-width: 1280px) {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 85px;
+            padding-right: 85px;
+            gap: 20px;
         }
 
         &-title {
@@ -44,6 +60,7 @@
 
             @media  screen and (min-width: 768px) {
                 font-size: 24px;
+                padding-bottom: 18px;
             }
         }
 
@@ -57,21 +74,7 @@
         }
     }
 
-    &_title {
-        font-family: $title-font;
-        font-weight: bold;
-        font-size: 24px;
-
-        @media  screen and (min-width: 768px) {
-            grid-column: 1 / 4;
-            font-size: 26px;
-        }
-
-        @media  screen and (min-width: 1280px) {
-            font-size: 32px;
-        }
-    }
-
+    
     &_link {
         color: $white-color;
         background-color: $orange-color;
@@ -80,9 +83,11 @@
         width: 184px;
         height: 45px;
         padding: 10px 25px;
-        border-radius: 30px;
+        border-radius: 22.5px;
         text-decoration: none;
         text-align: center;
+        align-content: center;
+        
 
         @media  screen and (min-width: 768px) {
             grid-column: 1 / 4;
